@@ -1,0 +1,7 @@
+MODULE Multiplier4x4
+	SUBMODULE fourbitbinaryadder
+		INSTANCE XLXI_1
+	SUBMODULE fourbitbinaryadder
+		INSTANCE XLXI_2
+	SUBMODULE fourbitbinaryadder
+		INSTANCE XLXI_3
