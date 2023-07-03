@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/work/xil files/PRNG/D_ff.xst" -ofn "D:/work/xil files/PRNG/D_ff.syr" 

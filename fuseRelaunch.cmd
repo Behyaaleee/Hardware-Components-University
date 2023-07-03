@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/work/xil files/PRNG/D_ff_D_ff_sch_tb_isim_beh.exe" -prj "D:/work/xil files/PRNG/D_ff_D_ff_sch_tb_beh.prj" "D_ff_D_ff_sch_tb" "work.glbl" 

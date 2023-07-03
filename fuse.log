@@ -1,0 +1,27 @@
+Running: D:\Apps\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/work/xil files/PRNG/D_ff_D_ff_sch_tb_isim_beh.exe -prj D:/work/xil files/PRNG/D_ff_D_ff_sch_tb_beh.prj D_ff_D_ff_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/work/xil files/PRNG/D_ff.vf" into library work
+Analyzing Verilog file "D:/Apps/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "D:/work/xil files/PRNG/test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module NAND2
+Compiling module INV
+Compiling module D_ff
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
+Compiling architecture behavioral of entity d_ff_d_ff_sch_tb
+Time Resolution for simulation is 1ps.
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\D_ff_D_ff_sch_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 6 VHDL Units
+Compiled 4 Verilog Units
+Built simulation executable D:/work/xil files/PRNG/D_ff_D_ff_sch_tb_isim_beh.exe
+Fuse Memory Usage: 51804 KB
+Fuse CPU Usage: 452 ms

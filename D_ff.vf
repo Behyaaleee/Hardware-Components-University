@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_ff.vf
+// /___/   /\     Timestamp : 05/23/2022 20:52:53
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog "D:/work/xil files/PRNG/D_ff.vf" -w "D:/work/xil files/PRNG/D_ff.sch"
+//Design Name: D_ff
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_ff(CLK, 
+            D, 
+            Q, 
+            Qinv);
+
+    input CLK;
+    input D;
+   output Q;
+   output Qinv;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire Qinv_DUMMY;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qinv = Qinv_DUMMY;
+   NAND2  XLXI_1 (.I0(XLXN_3), 
+                 .I1(D), 
+                 .O(XLXN_4));
+   NAND2  XLXI_2 (.I0(XLXN_4), 
+                 .I1(XLXN_3), 
+                 .O(XLXN_6));
+   NAND2  XLXI_3 (.I0(XLXN_10), 
+                 .I1(XLXN_4), 
+                 .O(XLXN_7));
+   NAND2  XLXI_4 (.I0(XLXN_6), 
+                 .I1(XLXN_7), 
+                 .O(XLXN_10));
+   NAND2  XLXI_5 (.I0(XLXN_11), 
+                 .I1(XLXN_7), 
+                 .O(XLXN_12));
+   NAND2  XLXI_6 (.I0(XLXN_12), 
+                 .I1(XLXN_10), 
+                 .O(XLXN_14));
+   NAND2  XLXI_7 (.I0(Qinv_DUMMY), 
+                 .I1(XLXN_12), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_8 (.I0(Q_DUMMY), 
+                 .I1(XLXN_14), 
+                 .O(Qinv_DUMMY));
+   INV  XLXI_9 (.I(XLXN_3), 
+               .O(XLXN_11));
+   INV  XLXI_10 (.I(CLK), 
+                .O(XLXN_3));
+endmodule
