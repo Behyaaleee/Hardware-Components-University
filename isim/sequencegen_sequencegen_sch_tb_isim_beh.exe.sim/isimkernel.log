@@ -1,0 +1,28 @@
+Command line:
+   sequencegen_sequencegen_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54058
+
+Tue May 24 20:33:50 2022
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5155.16 Meg
+
+ Total Signals          : 218
+ Total Nets             : 91
+ Total Signal Drivers   : 58
+ Total Blocks           : 52
+ Total Primitive Blocks : 46
+ Total Processes        : 59
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 655
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5155.16 Meg
+
+Tue May 24 20:33:57 2022
+
