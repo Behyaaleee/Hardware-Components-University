@@ -1,0 +1,28 @@
+Command line:
+   datasyncer_datasyncer_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64774
+
+Sun May 29 14:19:57 2022
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5155.11 Meg
+
+ Total Signals          : 167
+ Total Nets             : 74
+ Total Signal Drivers   : 44
+ Total Blocks           : 31
+ Total Primitive Blocks : 26
+ Total Processes        : 42
+ Total Traceable Variables  : 33
+ Total Scalar Nets and Variables : 639
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 4683.25 Meg
+
+Sun May 29 14:22:35 2022
+
