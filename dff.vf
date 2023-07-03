@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : dff.vf
+// /___/   /\     Timestamp : 05/24/2022 21:02:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog "D:/work/xil files/DataSync/dff.vf" -w "D:/work/xil files/DataSync/dff.sch"
+//Design Name: dff
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module dff(CLK, 
+           D, 
+           RESET, 
+           SET, 
+           Q, 
+           Qinv);
+
+    input CLK;
+    input D;
+    input RESET;
+    input SET;
+   output Q;
+   output Qinv;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_9;
+   wire XLXN_12;
+   wire Qinv_DUMMY;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qinv = Qinv_DUMMY;
+   NAND3  XLXI_1 (.I0(XLXN_12), 
+                 .I1(XLXN_5), 
+                 .I2(SET), 
+                 .O(XLXN_4));
+   NAND3  XLXI_2 (.I0(RESET), 
+                 .I1(CLK), 
+                 .I2(XLXN_4), 
+                 .O(XLXN_12));
+   NAND3  XLXI_3 (.I0(XLXN_5), 
+                 .I1(CLK), 
+                 .I2(XLXN_12), 
+                 .O(XLXN_9));
+   NAND3  XLXI_4 (.I0(RESET), 
+                 .I1(D), 
+                 .I2(XLXN_9), 
+                 .O(XLXN_5));
+   NAND3  XLXI_5 (.I0(Qinv_DUMMY), 
+                 .I1(XLXN_12), 
+                 .I2(SET), 
+                 .O(Q_DUMMY));
+   NAND3  XLXI_6 (.I0(RESET), 
+                 .I1(XLXN_9), 
+                 .I2(Q_DUMMY), 
+                 .O(Qinv_DUMMY));
+endmodule

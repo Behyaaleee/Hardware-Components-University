@@ -1,0 +1,2 @@
+vhdl isim_temp "sync.vhd"
+verilog isim_temp "D:/Apps/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

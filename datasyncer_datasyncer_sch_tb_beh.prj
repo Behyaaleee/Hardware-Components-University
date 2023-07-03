@@ -1,0 +1,4 @@
+verilog work "dff.vf"
+verilog work "datasyncer.vf"
+vhdl work "sync.vhd"
+verilog work "D:/Apps/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
